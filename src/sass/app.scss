@@ -1,0 +1,28 @@
+ul{
+  margin: 0;
+  list-style: none;
+  li {
+    ul {
+      margin: 0;
+    }
+  }
+}
+
+.menu-list__block-grid {
+  display: block;
+  overflow: auto;
+  border: 1px solid #CCC;
+  margin: 20px;
+  
+  > li {
+    float: left;
+    display: block;
+    margin-right: 20px;
+    min-width: 200px;
+    border-right: 1px solid #CCC;
+    &:last-child {
+      margin-right: 0;
+      border-right: 0;
+    }
+  }
+}
